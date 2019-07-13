@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<h1>singwa-swoole-ws-test</h1>
+<script type="text/javascript">
+	// 定义连接地址端口
+	var wsUrl = "ws://www.bengder.cc:9501";
+	// 实例化websocket对象
+	var websocket = new WebSocket(wsUrl);
+	// 实例对象的onopen属性
+	websocket.onopen = function(evt){
+		websocket.send("Hello, frankie!");
+		console.log("connect-swoole-success");
+	}
+	// 实例对象的onmessage属性
+	websocket.onmessage= function(evt){
+		console.log("ws-server-return-data: " + evt.data);
+	}
+	// onclose
+	websocket.onclose = function(evt){
+		console.log("closed!");
+	}
+	// onerror
+	websocket.onerror = function(evt,e){
+		console.log("error: " + evt.data);
+	}
+</script>
+</body>
+</html>
