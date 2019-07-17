@@ -1,6 +1,6 @@
 # practices
 ## arithmetic  主要收集算法
-- [x] 冒泡排序 `arithmetic/bubbleSort.php`
+- [x] 冒泡排序  [`arithmetic/bubbleSort.php`](https://github.com/dobymonk3y/practices/blob/master/arithmetic/bubbleSort.php)
 - [x] 快速排序 `arithmetic/quickSort.php`
 - [x] 插入排序 `arithmetic/insertSort.php`
 
